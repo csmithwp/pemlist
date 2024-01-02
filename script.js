@@ -11,7 +11,14 @@ $("#weight").on('input', function() {
 $(document).ready(function(){
 
     let userCookie = document.cookie
+    // console.log('userCookie = '+userCookie)
+    userCookie = userCookie.split('=')
+    userCookie = userCookie[1]
     console.log('userCookie = '+userCookie)
+    if(userCookie) {
+        $('#weight').val(userCookie)
+    }
+    // $("input:text").val("Glenn Quagmire");
 
     $('input[type=range]').on('input', function () {
         let v = $("#weight").val()
