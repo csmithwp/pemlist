@@ -9,22 +9,9 @@ $("#weight").on('input', function() {
 
 
 $(document).ready(function(){
-    
-    let x = document.setcookie;
-    console.log('x = '+x)
 
-    // let username = getCookie("user");
-    // if (username != "") {
-    //     console.log("Welcome again " + username);
-    // } else {
-    //     console.log('oh no')
-    // }
-
-    document.cookie = "name=oeschger; SameSite=None; Secure";
-    document.cookie = "favorite_food=tripe; SameSite=None; Secure";
-
-    console.log('doc cook = '+document.cookie)
-
+    let userCookie = document.cookie
+    console.log('userCookie = '+userCookie)
 
     $('input[type=range]').on('input', function () {
         let v = $("#weight").val()
