@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Website</title>
+        <!-- <link rel="stylesheet" href="./style.css"> -->
+        <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+        <!-- <link href="https://unpkg.com/tabulator-tables@5.5.2/dist/css/tabulator_midnight.min.css" rel="stylesheet"> -->
+        <!-- <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.2/dist/js/tabulator.min.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>PEM</h1>
+
+            <div class="controlContainer">
+                <div class="teamMembers">
+                    <span>AJ</span>
+                    <span>BT</span>
+                    <span>JJ</span>
+                    <span>CS</span>
+                    <span>RB</span>
+                </div>
+                <input type="range" id="weight" min="0" value="0" max="4" step="1" list="volsettings" class="rangeInput">
+                <datalist id="volsettings">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </datalist>
+            </div>
+            <!-- <div id="example-table"></div> -->
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th width="5%"></th>
+                        <th width="30%">Deck</th>
+                        <th>Link</th>
+                        <th>Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="5%" class="openBtn openBtnOpen" id="_1"></td>
+                        <td width="30%">
+                            <span class="content_0">
+                                PEM 2023 WPE Tech Capabilities
+                            </span>
+                            <span class="contentUser content_1">
+                                PEM 2023 WPE Tech Capabilities
+                            </span>
+                            <span class="contentUser content_2">
+                                PEM 2023 WPE Tech Capabilities
+                            </span>
+                            <span class="contentUser content_3">
+                                2023 WPE Tech Overview
+                            </span>
+                            <span class="contentUser content_4">
+                                Platform Overview Updated
+                            </span>
+                            <div class="exp" id="row_1">
+                                Here is some more content
+                            </div>
+                        </td>
+                        <td>
+                            <span class="content_aj">
+                                <a class="slides" target="_blank" href="https://docs.google.com/presentation/d/1qQMruxfpoaRJ-6b2nHwmCxpmJUx8Uz6Pq35pXNU4L-M/edit?usp=sharing">
+                                    Slides
+                                </a>
+                            </span>
+                        </td>
+                        <td>2nd January 2024</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td width="5%" class="openBtn openBtnOpen" id="_2"></td>
+                        <td width="30%">Main Source Deck: Choose your own Adventure
+                            <div class="exp" id="row_2">
+                                Here is some more content 222
+                            </div>
+                        </td>
+                        <td>
+                            <a class="slides" target="_blank" href="https://docs.google.com/presentation/d/1qQMruxfpoaRJ-6b2nHwmCxpmJUx8Uz6Pq35pXNU4L-M/edit?usp=sharing">
+                                Slides
+                            </a>
+                        </td>
+                        <td>3rd January 2024</td>
+                    </tr>
+                    <tr class="active-row">
+                        <td width="5%" class="openBtn openBtnOpen" id="_3"></td>
+                        <td width="30%">PEM eComm Deck 2023
+                            <div class="exp" id="row_3">
+                                Here is some more content 222
+                            </div>
+                        </td>
+                        <td>
+                            <a class="slides" target="_blank" href="https://docs.google.com/presentation/d/1qQMruxfpoaRJ-6b2nHwmCxpmJUx8Uz6Pq35pXNU4L-M/edit?usp=sharing">
+                                Slides
+                            </a>
+                        </td>
+                        <td>4th January 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <!-- <script src="script.js"></script> -->
+    </body>
+</html>
