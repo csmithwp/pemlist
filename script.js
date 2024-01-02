@@ -12,11 +12,11 @@ $(document).ready(function(){
 
     let userCookie = document.cookie
     // console.log('userCookie = '+userCookie)
-    userCookie = userCookie.split('=')
-    userCookie = userCookie[1]
-    console.log('userCookie = '+userCookie)
-    if(userCookie) {
-        $('#weight').val(userCookie)
+    let userCookie2 = userCookie.split('=')
+    let userCookie3 = userCookie2[1]
+    console.log('userCookie3 = '+userCookie3)
+    if(userCookie3) {
+        $('#weight').val(userCookie3)
     }
     // $("input:text").val("Glenn Quagmire");
 
