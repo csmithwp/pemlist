@@ -34,7 +34,8 @@ $(document).ready(function(){
         // d.setTime(d.getTime() + (365*24*60*60*1000));
         // let expires = "expires="+ d.toUTCString();
         // document.cookie = "user=" + v + ";" + expires + ";path=/";
-        document.cookie = "user="+v+"; expires=Thu, 1 May 2025 12:00:00 UTC";
+        // document.cookie = "user="+v+"; expires=Thu, 1 May 2025 12:00:00 UTC";
+        document.cookie = "user="+v+"; SameSite=None; Secure";
         // let xxx = document.setcookie
         // console.log('xxx = '+xxx)
         // document.setUserCookie = "user="+v+"; expires=Thu, 1 May 2025 12:00:00 UTC";
