@@ -11,30 +11,17 @@ $("#weight").on('input', function() {
 $(document).ready(function(){
 
     let userCookie = document.cookie
-    // console.log('userCookie = '+userCookie)
     let userCookie2 = userCookie.split('=')
     let userCookie3 = userCookie2[1]
     console.log('userCookie3 = '+userCookie3)
     if(userCookie3) {
         $('#weight').val(userCookie3)
     }
-    // $("input:text").val("Glenn Quagmire");
+
 
     $('input[type=range]').on('input', function () {
         let v = $("#weight").val()
-        // console.log('v a ='+v)
-        // setCookie('user', v, 365)
-        // const d = new Date();
-        // d.setTime(d.getTime() + (365*24*60*60*1000));
-        // let expires = "expires="+ d.toUTCString();
-        // document.cookie = "user=" + v + ";" + expires + ";path=/";
-        // document.cookie = "user="+v+"; expires=Thu, 1 May 2025 12:00:00 UTC";
         document.cookie = "user="+v+"; SameSite=None; Secure";
-        // let xxx = document.setcookie
-        // console.log('xxx = '+xxx)
-        // document.setUserCookie = "user="+v+"; expires=Thu, 1 May 2025 12:00:00 UTC";
-        // let x = document.setUserCookie;
-        // console.log('x a = '+x)
 
         for(var i = 0; i < 5; i++) {
             if(i!=v) {
@@ -47,7 +34,8 @@ $(document).ready(function(){
 
     $(".openBtn").click(function(e){
         console.log(e.target.id);
-        $("#row"+e.target.id).slideToggle(100);
+        $("#row"+e.target.id).slideToggle(200)
+        // .toggleClass('tableCap');
         $("#"+e.target.id).toggleClass('openBtnOpen').toggleClass('openBtnClose')
     });
 });
